@@ -1,0 +1,25 @@
+{
+  "name": "rectangle1",
+  "version": "1.0.0",
+  "description": "计算长方形的周长和面积",
+  "main": "rectangle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pankaiya/rectangle1.git"
+  },
+  "author": "pankaiya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pankaiya/rectangle1/issues"
+  },
+  "homepage": "https://github.com/pankaiya/rectangle1#readme",
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-csslint": "^2.0.0",
+    "grunt-eslint": "^21.0.0",
+    "grunt-htmlhint": "^0.9.13"
+  }
+}
