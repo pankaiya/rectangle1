@@ -1,4 +1,4 @@
-/* global Rectangle: true */
+/* global Rectangle,validate,isLegalKey: true */
 $(function() {
   var $width = $('#width'),
       $height = $('#height'),
@@ -9,6 +9,18 @@ $(function() {
       $heightValidate = $('#height-validate'),
       isPassValidate = false;
 
+  //字符检验
+  $width.keypress(function(e) {
+    if(!isLegalKey(e.key, e.target.value, e.target.selectionStart)) {
+      e.preventDefault();
+    }
+  });
+  $height.keypress(function(e) {
+    if(!isLegalKey(e.key, e.target.value, e.target.selectionStart)) {
+      e.preventDefault();
+    }
+  });
+  //字段检验
   $height.focusout(function(){
     var result = validate($height.val());
     isPassValidate = result.isOK;
